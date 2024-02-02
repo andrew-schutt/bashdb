@@ -1,7 +1,7 @@
 #!/bin/bash
 
 db_set() {
-  echo "$1,$2" >> database
+  echo "$1,$2" >> database && sync -d database
 }
 
 db_get() {
